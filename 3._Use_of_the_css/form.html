@@ -1,0 +1,170 @@
+<html>
+
+
+
+<head>
+    <title>PayMent Gateway</title>
+
+    <!--Internal CSS-->
+    <style>
+        form {
+            padding: 20px 0px 0px 25px;
+        }
+        
+        summary {
+            font-size: 23px;
+            font-family: monospace;
+        }
+        
+        header {
+            text-align: center;
+            font-size: large;
+            font-variant: small-caps;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            text-decoration: underline red
+        }
+        
+        u {
+            text-decoration: underline red;
+        }
+        
+        html {
+            background-color: rgb(11, 4, 69);
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="../3._Use_of_the_css/External.css"> </head>
+
+
+<body>
+    <header>
+
+        <!--inline CSS-->
+        <h2 style="color:yellow">FleetPay</h2>
+        <img src="../Photo_used/Fleet_logo.png " width="50px " height="50px ">
+    </header>
+    <form>
+
+
+        <Details>
+            <summary>
+                <u>User Details</u>
+            </summary>
+        </Details>
+        <br>
+
+        <div>
+            <label for="fname ">First name:</label>
+            <input type="text " required>
+        </div>
+        <br>
+
+        <div>
+            <label for="mname ">Middle name:</label>
+            <input type="text ">
+        </div>
+        <br>
+
+        <div>
+            <label for="lname ">Last name:</label>
+            <input type="text ">
+        </div>
+        <br>
+
+        <div>
+            Gender :
+            <select>
+                <option>male</option>
+                <option>female</option>
+                <option>other</option>
+            </select> </div>
+        <br>
+
+        <div>
+            <label for="address ">Address :</label>
+            <Address>
+            <textarea cols="19 " rows="3 "></textarea>
+            </Address>
+        </div>
+        <br>
+
+        <div>
+            Pincode :
+            <input type="number">
+        </div>
+        <br>
+
+        <div>
+            Email :
+            <input type="email" placeholder="Enter your email ">
+        </div>
+        <br>
+
+        <div>
+            Select your file :
+            <input type="file">
+        </div>
+        <br>
+
+
+        <Details>
+            <summary>
+                <u>Card Details</u>
+            </summary>
+        </Details>
+        <br>
+
+        <fieldset>
+            <legend>Select PayMent method:</legend>
+
+            <input type="radio" name="method " checked>
+            <label for="Net Banking">Net Banking</label>
+            <input type="radio" name="method ">
+            <label for="Net Banking">Credit Card</label>
+            <input type="radio" name="method ">
+            <label for="Net Banking">Debit Card</label>
+
+        </fieldset>
+        <br>
+
+        <div>
+            <label for="bank">Select your bank :</label>
+            <input type="search" placeholder="Select the bank ">
+        </div>
+        <br>
+
+        <div> Card No. :
+            <input type="number" placeholder="Enter the Card Number " required>
+        </div>
+        <br>
+
+        <div>
+            CVV :
+            <input type="password" placeholder="Enter you CVV " required>
+        </div>
+        <br>
+
+        <div>
+            Expiry date :
+            <input type="date">
+        </div>
+        <br>
+
+
+        <div>
+            <label for="copy">You need copy in</label>
+            <input type="checkbox"><label for="pdf ">PDF</label>
+            <input type="checkbox"><label for="message ">Message</label>
+            <input type="checkbox" checked><label for="email ">Email</label>
+        </div>
+        <br>
+        <div>
+            <button type="submit">Pay Now</button>
+            <input type="reset">
+        </div>
+
+
+    </form>
+</body>
+
+</html>

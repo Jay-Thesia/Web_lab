@@ -1,0 +1,11 @@
+Details {
+    color: pink;
+}
+
+input {
+    transition: background-color 2s;
+}
+
+input:hover {
+    background-color: aqua;
+}
