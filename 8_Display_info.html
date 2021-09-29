@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>PHP info</title>
+</head>
+
+<body>
+
+    <?php
+
+
+  if (empty($_POST["comment"])) {
+    $comment = "";
+  } else {
+    $comment = test_input($_POST["comment"]);
+  }
+  
+?>
+
+
+        Comment: <textarea name="comment" rows="5" cols="40"><?php echo $comment;?></textarea>
+        <br><br>
+        <input type="submit" name="submit" value="Submit">
+
+
+        <?php
+echo "<h2>Your Input:</h2>";
+echo $comment;
+?>
+
+</body>
+
+</html>
